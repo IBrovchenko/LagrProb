@@ -1,0 +1,25 @@
+******   Lagrangian model of              **************
+******  Bottom boundary layer formation   **************
+******  due to the scavenging process     **************
+0.   864000000  120.   !time0, time_end, dt   [s]  Start time, End time and model time step
+50000  2500000         !nparticles  (active, total) number of particles
+1                      !nstates (totally 0:nstates) number of states
+-1                     !StateInit - initial state "-" means bottom
+0. 0.                  !U advection velocity  0:nstates [m/s]
+0. 0.                  !V advection velocity  0:nstates [m/s]
+0. 5.0e-5              !W advection velocity  0:nstates [m/s]
+100.                   !Kd (1:nstates)    [m3/kg]  distribution coefficient
+0.00025                !SS concentrations (1:nstates) [kg/m3] suspended sediment concentration
+1.e-4 0.               !K0, Kh diffuion coef  (verical an horizontal) [m2/s]
+1.16e-5		       !a12 desorbtion rate [1/s]
+1.53e-9                !A_bds
+1.59e-6                !A_rs
+1.0                    !bottom fractions of sediments (0.,1) 1:nsatates
+2600.                  !rho, sediment density [kg/m3]
+0.6                    !epsilon, bed sediments porosity
+1.0                    !DZ near BC bottom water layer thickness , [m]
+0.05                   !Zstar active bed layer thickness, [m]
+0.                     !decay constant, [1/s]          
+864000.                !DT_out, [s] time step for writing output files
+10.                    !CB0 total activity in sediments [Bq]
+0.0 1000. 2.          !Zmin, zmax, dx [m] domain boundaries, dx for concentration box counting
